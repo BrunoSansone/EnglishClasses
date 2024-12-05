@@ -1,0 +1,82 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    text-align: center;
+    background: #7608b6;
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.exercise {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #333;
+}
+
+
+.options label {
+    display: block;
+    margin: 5px 0;
+}
+
+h3 {
+    margin-top: 30px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background: #7608b6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #7608b6;
+}
+
+.feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}

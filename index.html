@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Exercises</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>English Exercises</h1>
+        <p>Practice English with these exercises</p>
+    </header>
+    <main>
+        <section class="exercise">
+            <h2>Read the text below to answer the questions.</h2>
+            <p><strong>High-tech treasure hunt</strong><br></p> 
+                If you’re a fan of hiking and you’re into treasure hunts, then geocaching is the thing for you.
+                <p2>Geocaching is an international treasure hunt that involves using your technology skills and
+                GPS to find a ‘geocache’ – a box of treasures that people have hidden in a secret outdoor
+                location.<br><br>
+                
+                You can look up information about where to find a geocache on the internet or there are also
+                geocache smartphone apps. If you are successful and you find a geocache, you open the box,
+                write your name in the notebook inside the box, you might swap a treasure in the box for
+                something of the same or higher value, and then you return it to its original place. <br><br>
+                
+                A geocache is usually a small metal, wooden or plastic box that is protected from the cold
+                and rain. Typically, it contains a notebook, which might be in a plastic bag to protect it, a
+                pencil and small ‘treasures’ that aren’t valuable, for example, a plastic toy, a seashell, dice
+                and sunglasses. <br><br>
+                
+                It’s a great activity to do with friends or family and is fun for all ages. There are over three
+                million geocaches hidden all over the world in nature parks and cities. In fact, there might be
+                a geocache not far from you right now!<br>
+            </p2><br>
+            <h2>What is 'Geoaching'?</h2>
+            <div class="options">
+                <label><input type="radio" name="q1" value="treasurehunt"> A treasure hunt</label>
+                <label><input type="radio" name="q1" value="gps"> A GPS</label>
+                <label><input type="radio" name="q1" value="A small metal box"> A small metal box</label>
+            </div></p3><br>
+            <button class="submit-btn" onclick="checkAnswer('q1', 'treasurehunt')">Submit</button>
+            <p class="feedback" id="feedback-q1"></p>
+        </section>
+
+        <section class="exercise">
+            <h2>Read the article again. Are the sentences T (true) or F (false)?</h2>
+            <p> Geocaching is a good activity if you like walking.</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="true"> True</label>
+                <label><input type="radio" name="q2" value="false"> False</label>
+            </div>
+            <button class="submit-btn" onclick="checkAnswer('q2', 'true')">Submit</button>
+            <p class="feedback" id="feedback-q2"></p>
+        </section>
+
+        <section class="exercise">
+            <p> Geocaches can be found all around the world.</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="true"> True</label>
+                <label><input type="radio" name="q3" value="false"> False</label>
+            </div>
+            <button class="submit-btn" onclick="checkAnswer('q3', 'true')">Submit</button>
+            <p class="feedback" id="feedback-q3"></p>
+        </section>
+
+        <section class="exercise">
+            <p> You don’t need to use technology to find geocaches.</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="true"> True</label>
+                <label><input type="radio" name="q4" value="false"> False</label>
+            </div>
+            <button class="submit-btn" onclick="checkAnswer('q4', 'false')">Submit</button>
+            <p class="feedback" id="feedback-q4"></p>
+        </section>
+
+        <section class="exercise">
+            <p> Geocaching is an indoor activity.</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="true"> True</label>
+                <label><input type="radio" name="q5" value="false"> False</label>
+            </div>
+            <button class="submit-btn" onclick="checkAnswer('q5', 'false')">Submit</button>
+            <p class="feedback" id="feedback-q5"></p>
+        </section>
+
+        <section class="exercise">
+            <p> You could find a geocache with your smartphone.</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="true"> True</label>
+                <label><input type="radio" name="q6" value="false"> False</label>
+            </div>
+            <button class="submit-btn" onclick="checkAnswer('q6', 'true')">Submit</button>
+            <p class="feedback" id="feedback-q6"></p>
+        </section>
+
+        <section class="exercise">
+            <h2></h2>
+            <p> Geocaching is a good activity if you like walking.</p>
+            <input type="text" id="q2" placeholder="Your answer">
+            <button class="submit-btn" onclick="checkAnswer('q2', 'are')">Submit</button>
+            <p class="feedback" id="feedback-q2"></p>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 English Learning Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
