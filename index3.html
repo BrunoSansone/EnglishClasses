@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Exercises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        
+        header {
+            text-align: center;
+            background: #0602ee;
+            color: white;
+            padding: 1rem 0;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .exercise {
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            margin-top: 30px;
+            color: #333;
+        }
+        
+        
+        .options label {
+            display: block;
+            margin: 5px 0;
+        }
+        
+        h3 {
+            margin-top: 30px;
+            color: #333;
+        }
+        
+        input[type="text"] {
+            width: 95%;
+            padding: 10px;
+            margin: 10px ;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .submit-btn {
+            background:#0602ee;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .submit-btn:hover {
+            background: #7608b6;
+        }
+        
+        .feedback {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+</style>        
+</head>
+<body>
+    <header>
+        <h1>English Exercises</h1>
+        <p>Practice English with these exercises</p>
+    </header>
+    <main>
+            <h2>Get involved in the environment!<br>
+                There are many ways to help the environment. Here are three:</h2>
+            <p><strong>Action for Conservation/Penpont Project</strong><br></p> 
+            It was reported in 2016 that populations of the UK’s most endangered species have decreased by
+            two-thirds since 1970. The organisation Action for Conservation was created in 2012 with a goal that
+            every young person in the UK should want to protect the natural world. In 2019, they began the
+            Penpont Project in which 20 young people aged 12–17 manage a project to help the local wildlife in
+            Wales. These volunteers work with farmers and local people to improve the environment in an area
+            of 2,000 acres – that’s about 1500 football pitches!<br><br>
+            
+            <strong>Our Bright Future</strong><br>
+            This programme is actually 31 projects across the UK. Each one helps people aged 11–24 gain skills
+            and experience which will improve their CVs and help with future employment while they will be
+            helping their local environment. All over the UK, over 115,000 teenagers and young adults have
+            participated in Our Bright Future Projects. There are many activities to choose from depending on
+            what you are interested in, from creating digital products which help the environment to repurposing
+            unused local spaces to benefit the local community. <br><br>
+            
+            <strong>(Young People’s Trust for the Environment)</strong> <br>    
+            Created in 1982, this charity aims to help young people understand environmental issues such as
+            climate change, pollution and deforestation better. Their website has got hundreds of free resources
+            such as fun facts for kids (Did you know the Siberian tiger is the largest of all cats?), advanced
+            information for teenagers and free lesson plans for teachers. In their news section, you can read about
+            the latest environmental projects in the UK and find out who has won their most recent writing or
+            video competition.
+        </p2><br>
+                <section class="exercise">
+                    <h2>Read the article again. Are the sentences T (true) or F (false)?</h2>
+                    <p> 1 There were more endangered animals in the UK in 2016 than in 1970.</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="true"> True</label>
+                        <label><input type="radio" name="q1" value="false"> False</label>
+                    </div>
+                    <button class="submit-btn" onclick="checkMultipleChoice('q1', 'false')">Submit</button>
+                    <p class="feedback" id="feedback-q1"></p>
+                </section>
+                <section class="exercise">
+                    <p>2 The aim of Action for Conversation is to get all young people working on environmental
+                        projects.</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="true"> True</label>
+                        <label><input type="radio" name="q2" value="false"> False</label>
+                    </div>
+                    <button class="submit-btn" onclick="checkMultipleChoice('q2', 'false')">Submit</button>
+                    <p class="feedback" id="feedback-q2"></p>
+                </section>
+                <section class="exercise">
+                    <p>3 If you work with Our Bright Future, you will help look after the environment while learning
+                        new things.</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="true"> True</label>
+                        <label><input type="radio" name="q3" value="false"> False</label>
+                    </div>
+                    <button class="submit-btn" onclick="checkMultipleChoice('q3', 'true')">Submit</button>
+                    <p class="feedback" id="feedback-q3"></p>
+                </section>
+                </section>
+                <section class="exercise">
+                    <p>4 The young people on the Our Bright Future programme do similar activities.</p>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="true"> True</label>
+                        <label><input type="radio" name="q4" value="false"> False</label>
+                    </div>
+                    <button class="submit-btn" onclick="checkMultipleChoice('q4', 'false')">Submit</button>
+                    <p class="feedback" id="feedback-q4"></p>
+                </section>
+                <section class="exercise">
+                    <p>5 YPTE offers different online resources for different ages.</p>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="true"> True</label>
+                        <label><input type="radio" name="q5" value="false"> False</label>
+                    </div>
+                    <button class="submit-btn" onclick="checkMultipleChoice('q5', 'true')">Submit</button>
+                    <p class="feedback" id="feedback-q5"></p>
+                </section>
+                <section class="exercise">
+                    <p>6 YPTE provides useful resources for people who work in education.</p>
+                    <div class="options">
+                        <label><input type="radio" name="q6" value="true"> True</label>
+                        <label><input type="radio" name="q6" value="false"> False</label>
+                    </div>
+                    <button class="submit-btn" onclick="checkMultipleChoice('q6', 'true')">Submit</button>
+                    <p class="feedback" id="feedback-q6"></p>
+                </section>
+        
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Developed by Bruno Sansone</p>
+    </footer>   
+    <script>
+     function checkAnswer(questionId, correctAnswer) {
+    const userAnswer = getUserAnswer(questionId);
+    const feedback = document.getElementById(`feedback-${questionId}`);
+
+    if (userAnswer === correctAnswer.toLowerCase()) {
+        feedback.textContent = "Correct!";
+        feedback.style.color = "green";
+        feedback.classList.add("correct");
+        feedback.classList.remove("incorrect");
+    } else {
+        feedback.textContent = "Try again.";
+        feedback.style.color = "red";
+        feedback.classList.add("incorrect");
+        feedback.classList.remove("correct");
+    }
+}
+
+function getUserAnswer(questionId) {
+    const userAnswer = document.getElementById(questionId).value.trim().toLowerCase();
+    return userAnswer;
+}
+
+function checkMultipleChoice(questionId, correctAnswer) {
+    const selectedOption = document.querySelector(`input[name="${questionId}"]:checked`);
+    const feedback = document.getElementById(`feedback-${questionId}`);
+
+    if (selectedOption) {
+        const userAnswer = selectedOption.value;
+        if (userAnswer === correctAnswer) {
+            feedback.textContent = "Correct!";
+            feedback.style.color = "green";
+            feedback.classList.add("correct");
+            feedback.classList.remove("incorrect");
+        } else {
+            feedback.textContent = "Try again.";
+            feedback.style.color = "red";
+            feedback.classList.add("incorrect");
+            feedback.classList.remove("correct");
+        }
+    } else {
+        feedback.textContent = "Please select an answer.";
+        feedback.classList.add("incorrect");
+        feedback.classList.remove("correct");
+    }
+}
+    </SCRIPT>
+</body>
+</html>

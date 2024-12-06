@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Exercises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        
+        header {
+            text-align: center;
+            background: #f57017;
+            color: white;
+            padding: 1rem 0;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .exercise {
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            margin-top: 30px;
+            color: #333;
+        }
+        
+        
+        .options label {
+            display: block;
+            margin: 5px 0;
+        }
+        
+        h3 {
+            margin-top: 30px;
+            color: #333;
+        }
+        
+        input[type="text"] {
+            width: 95%;
+            padding: 10px;
+            margin: 10px ;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .submit-btn {
+            background: #f57017;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .submit-btn:hover {
+            background: #7608b6;
+        }
+        
+        .feedback {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+</style>        
+</head>
+<body>
+    <header>
+        <h1>English Exercises</h1>
+        <p>Practice English with these exercises</p>
+    </header>
+    <main>
+        <section class="exercise">
+            <h2>Hello, Boston!</h2>
+            <p><strong>High-tech treasure hunt</strong><br></p> 
+            This is my first trip to Boston, Massachusetts, and so far it’s been an unforgettable experience. We’re
+            here for ten days, and then we’ll be going to New York for another five days before going home.
+            There are lots of things to see and do here – we’ve already been on the old town trolley* tour, which
+            was a great way to see the sights of the city. This afternoon we’re going to visit Quincy Market to do
+            some shopping and then have dinner. I had promised my sister that we’d do the pizza tour of the
+            North End of the city tomorrow afternoon, but I’m not sure if we’ll have time now. My dad wants to
+            go to a baseball match at Fenway Park and do a tour of the place, too. I’m going to do that with him,
+            and Mum and my sister are going to do a walking tour of the old part of the city. The tour takes two
+            hours and they’ll learn about Boston’s history.<br>            
+
+            We’re all looking forward to going to the beach at Martha’s Vineyard later this week. We take a bus
+            to Cape Cod and then take the ferry from there. Then at the weekend, we’re doing a photographic
+            tour of Boston – it’s a tour where you are taught how to take good photos. My mum has an amazing
+            new camera and lens, so that will be a good opportunity for her.<br>
+
+            Then, just before we go to New York, we’re going to do a chocolate tasting experience! I hear you’re
+            taken to six different places to try out different types of chocolate made in the city. I can’t wait!
+
+        </p2><br>
+        <section class="exercise">
+            <h2>Read Tom’s blog about his trip to the USA with his family. Then answer the questions.
+                Write one or two words for each answer.</h2>
+
+                    
+                    <p> <label>1 Where are they going shopping this afternoon?</label></p>
+                    <div class="options">
+                    <input type="text" name="q1" id="q1" placeholder="userAnswer">
+                    <button class="submit-btn" onclick="checkAnswer('q1', 'Quincy Market')">Submit</button>
+                    <div id="feedback-q1"></div>
+                </section>
+        <section class="exercise">        
+                
+        <section class="exercise">
+                    <p> <label>2 What kind of food might they eat tomorrow afternoon?</label></p>
+                    <div class="options">
+                    <input type="text" name="q2" id="q2" placeholder="userAnswer">
+                    <button class="submit-btn" onclick="checkAnswer('q2', 'Pizza')">Submit</button>
+                    <div id="feedback-q2"></div>
+                </section>
+        <section class="exercise">
+                    <p> <label>3 What sport is Tom’s father interested in?</label></p>
+                    <div class="options">
+                    <input type="text" name="q3" id="q3" placeholder="userAnswer">
+                    <button class="submit-btn" onclick="checkAnswer('q3', 'baseball')">Submit</button>
+                    <div id="feedback-q3"></div>
+                </section>
+        <section class="exercise">
+                    <p> <label>4 How long does the tour of the old city take?</label></p>
+                    <div class="options">
+                    <input type="text" name="q4" id="q4" placeholder="userAnswer">
+                    <button class="submit-btn" onclick="checkAnswer('q4', 'two hours')">Submit</button>
+                    <div id="feedback-q4"></div>
+                </section>
+        <section class="exercise">
+                    <p> <label>5 How are they travelling to Martha’s Vineyard from Cape Cod?</label></p>
+                    <div class="options">
+                    <input type="text" name="q5" id="q5" placeholder="userAnswer">
+                    <button class="submit-btn" onclick="checkAnswer('q5', 'by ferry')">Submit</button>
+                    <div id="feedback-q5"></div>
+                </section>
+                </section>
+        <section class="exercise">
+                    <p> <label>6 Who’s looking forward to the photographic tour?</label></p>
+                    <div class="options">
+                    <input type="text" name="q6" id="q6" placeholder="userAnswer">
+                    <button class="submit-btn" onclick="checkAnswer('q6', 'His mom')">Submit</button>
+                    <div id="feedback-q6"></div>
+                </section>
+        <section class="exercise">
+                    <p> <label>7 How many locations are they visiting to try chocolate?</label></p>
+                    <div class="options">
+                    <input type="text" name="q7" id="q7" placeholder="userAnswer">
+                    <button class="submit-btn" onclick="checkAnswer('q7', 'six')">Submit</button>
+                    <div id="feedback-q7"></div>
+                </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Developed by Bruno Sansone</p>
+    </footer>   
+    <script>
+     function checkAnswer(questionId, correctAnswer) {
+    const userAnswer = getUserAnswer(questionId);
+    const feedback = document.getElementById(`feedback-${questionId}`);
+
+    if (userAnswer === correctAnswer.toLowerCase()) {
+        feedback.textContent = "Correct!";
+        feedback.style.color = "green";
+        feedback.classList.add("correct");
+        feedback.classList.remove("incorrect");
+    } else {
+        feedback.textContent = "Try again.";
+        feedback.style.color = "red";
+        feedback.classList.add("incorrect");
+        feedback.classList.remove("correct");
+    }
+}
+
+function getUserAnswer(questionId) {
+    const userAnswer = document.getElementById(questionId).value.trim().toLowerCase();
+    return userAnswer;
+}
+
+function checkMultipleChoice(questionId, correctAnswer) {
+    const selectedOption = document.querySelector(`input[name="${questionId}"]:checked`);
+    const feedback = document.getElementById(`feedback-${questionId}`);
+
+    if (selectedOption) {
+        const userAnswer = selectedOption.value;
+        if (userAnswer === correctAnswer) {
+            feedback.textContent = "Correct!";
+            feedback.style.color = "green";
+            feedback.classList.add("correct");
+            feedback.classList.remove("incorrect");
+        } else {
+            feedback.textContent = "Try again.";
+            feedback.style.color = "red";
+            feedback.classList.add("incorrect");
+            feedback.classList.remove("correct");
+        }
+    } else {
+        feedback.textContent = "Please select an answer.";
+        feedback.classList.add("incorrect");
+        feedback.classList.remove("correct");
+    }
+}
+
+
+    
+    </SCRIPT>
+</body>
+</html>
