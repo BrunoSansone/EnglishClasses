@@ -191,13 +191,9 @@
         if (userAnswer === correctAnswer.toLowerCase()) {
             feedback.textContent = "Correct!";
             feedback.style.color = "green";
-            feedback.classList.add("correct");
-            feedback.classList.remove("incorrect");
         } else {
             feedback.textContent = "Try again.";
             feedback.style.color = "red";
-            feedback.classList.add("incorrect");
-            feedback.classList.remove("correct");
         }
     }
     
@@ -215,18 +211,15 @@
             if (userAnswer === correctAnswer) {
                 feedback.textContent = "Correct!";
                 feedback.style.color = "green";
-                feedback.classList.add("correct");
-                feedback.classList.remove("incorrect");
+
             } else {
                 feedback.textContent = "Try again.";
                 feedback.style.color = "red";
-                feedback.classList.add("incorrect");
-                feedback.classList.remove("correct");
+
             }
         } else {
             feedback.textContent = "Please select an answer.";
-            feedback.classList.add("incorrect");
-            feedback.classList.remove("correct");
+
         }
     }
     </script>
